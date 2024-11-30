@@ -185,7 +185,7 @@ static inline void htoipmi24(uint32_t h, uint8_t *ipmi)
 
 static inline uint32_t ipmi32toh(void *ipmi32)
 {
-	uint8_t *ipmi = ipmi32;
+	uint8_t *ipmi = (uint8_t *)ipmi32;
 	uint32_t h;
 
 	h = (uint32_t)ipmi[3] << 24; /* MSB */

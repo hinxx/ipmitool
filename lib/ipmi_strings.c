@@ -1138,6 +1138,8 @@ const struct valstr entity_id_vals[] = {
 	{ 0xA0, "PICMG Front Board" },
 	{ 0xC0, "PICMG Rear Transition Module" },
 	{ 0xC1, "PICMG AdvancedMC Module" },
+	{ 0xC2, "MicroTCA Carrier Hub" },
+	{ 0xD0, "OEM Module" },
 	{ 0xF0, "PICMG Shelf Management Controller" },
 	{ 0xF1, "PICMG Filtration Unit" },
 	{ 0xF2, "PICMG Shelf FRU Information" },

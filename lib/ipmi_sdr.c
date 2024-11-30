@@ -170,7 +170,7 @@ static const char *unit_desc[] = {
 
 /* sensor type codes (IPMI v1.5 table 36.3)
   / Updated to v2.0 Table 42-3, Sensor Type Codes */
-static const char *sensor_type_desc[] = {
+const char *sensor_type_desc[] = {
 	"reserved",
 	"Temperature",
 	"Voltage",
@@ -3078,6 +3078,7 @@ ipmi_sdr_start(struct ipmi_intf *intf, int use_builtin)
 		itr->total = sdr_info.count;
 		itr->next = 0;
 		lprintf(LOG_DEBUG, "SDR records   : %d", sdr_info.count);
+		lprintf(LOG_DEBUG, "SDR info flags: %x", sdr_info.flags);
 	}
 
 	if (ipmi_sdr_get_reservation(intf, itr->use_built_in,

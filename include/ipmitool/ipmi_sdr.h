@@ -45,6 +45,8 @@
 
 int ipmi_sdr_main(struct ipmi_intf *, int, char **);
 
+extern const char *sensor_type_desc[];
+
 #define tos32(val, bits)    ((val & ((1<<((bits)-1)))) ? (-((val) & (1<<((bits)-1))) | (val)) : (val))
 
 #if WORDS_BIGENDIAN
